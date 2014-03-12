@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Splash Screen</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="../../assets/css/fonts.css" />
 <link rel="stylesheet" href="css/jquery.mobile-1.4.0.css" />
 <link rel="stylesheet" href="css/wooden_theme.css" />
@@ -39,13 +40,13 @@ myLatlng = new google.maps.LatLng(30.7046486,76.71787259999996);
 geocoder = new google.maps.Geocoder();
 var latlng = new google.maps.LatLng(30.7046486,76.71787259999996);
 var mapOptions = {
-zoom: 13,
+zoom: 11,
 center: latlng
 }
 map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 marker = new google.maps.Marker({
 position: latlng,
-title:'<h1>locationvalue<h1>',
+title:'<h1>locationvalue</h1>',
 });
 marker.setMap(map);
 marker.setDraggable(true);
@@ -58,7 +59,7 @@ document.getElementById('lat').value = event.latLng.lat();
 document.getElementById('lng').value = event.latLng.lng();
 getLo(event.latLng);
 });
-var address = '<h1>locationvalue<h1>';
+var address = '<h1>locationvalue</h1>';
 geocoder.geocode( { 'address': address}, function(results, status) {
 if (status == google.maps.GeocoderStatus.OK) {
 // console.log(results[0].geometry.location);
@@ -78,7 +79,7 @@ console.log(marker);
 });
 }
 function codeAddress() {
-var address = '<h1>locationvalue<h1>';
+var address = '<h1>locationvalue</h1>';
 geocoder.geocode( { 'address': address}, function(results, status) {
 if (status == google.maps.GeocoderStatus.OK) {
 // console.log(results[0].geometry.location);
@@ -147,7 +148,7 @@ setTimeout(loadScript,3000);
   <div id="map-canvas" style="float:left; height:100%; width:100%;position:absolute;"></div>
   </div>
   <!-- Location Address -->
-  <div class="location_address"><p><h1>locationvalue<h1></p></div> 
+  <div class="location_address"><p><h1>locationvalue</h1><h1>locationarticle</h1></p></div> 
   <!-- Location Address Ends Here -->
   <div class="clr"></div>
   </div>

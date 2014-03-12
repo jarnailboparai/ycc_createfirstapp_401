@@ -18,10 +18,12 @@ body{
     border-top: medium none !important;
 }
 .owl-demo .item{
-	width:100px;
-	height:100px;
+	width:70px;
+	height:70px;
 	display:table-cell;
-	background:url(../images/icon_bg.png) no-repeat;
+	background-image:url('../images/icon_bg.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 	vertical-align:middle;
 	text-align:center;
 }
@@ -69,7 +71,7 @@ body{
 	cursor:pointer !important;
 }
 .app_feature_list a.item  img{
-	max-height:50px;
-	max-width:50px;
+	max-height:32px;
+	max-width:32px;
 }
 /* EDIT BY AMITOJ 18-Feb */
